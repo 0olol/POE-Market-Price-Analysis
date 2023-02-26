@@ -1,0 +1,94 @@
+Extracting Info and displaying in a nice format for analysis.
+
+I want to be able to know what to invest in which game currency or divination card, currently, for the best profit within the time frame I give the program.
+
+    - So program constraints are only for currency, divination or scarab.
+    - The investment is for the day’s decision. (Or whenever I run it)
+    - Being able to choose how long my investment stays inside. (Or rather setting a time frame for me to withdraw and purchase my item)
+
+
+Do I want to make a website for it ?
+    - Yes, React Spring Boot
+    - No, Python for faster analysis, and if i want it fast 
+How updated is the information I want to make  ?
+    - Very, need to run a bot to keep extracting info to compare with my own DB
+    - Whenever I run, will have to wait for the data to extract the information
+    - Not at all, means I plan on deciding which item i want to take out from it.
+Currency or divination card to be prioritized on. (Top few choices)
+    - Divine Orb 
+    - Tailoring Orb 
+    - Tempering Orb 
+    - Secondary Regreding Lens 
+    - HeadHunter(HH) Cards
+    - MageBlood(MB) Cards
+    - Mirror Shard, Mirror Cards
+
+Useful Links for Api calls that need to be implemented if you want to automate it.: 
+https://www.reddit.com/r/pathofexiledev/comments/6vxowg/list_of_poeninja_api_links/
+https://github.com/5k-mirrors/misc-poe-tools/blob/master/doc/poe-ninja-api.md
+https://klayver.github.io/poe-api-wrappers/classes/ninja.currency.currency.html
+https://poedb.tw/us/Developer_API
+
+
+Ten Simple Rules:
+1) Know your audience
+2) Identify your message
+3) Adapt the figure
+4) Captions are not optional 
+5) DO not trust the defaults
+6) Use color effectively
+7) Do not mislead the reader
+8) Avoid "chartJunk"
+9) Message trumps beauty 
+10) Get the right Tool
+
+Overall To-Do List:
+Extracting the data. 
+    - Python 
+    - Or using java. Plain Java ? Sounds boring but what i have to do. 
+    - Being able to layer over multiple league worth of data over each other. 
+    - A time Stamp thing to take into account, how longb the period is for each dataset.
+    - DL each league and extracting only Divine for now.(Divine only for 2 leagues though) 
+    - Maybe do mirror card, cause i forget how much mageblood is.
+
+Extracting out the mirror shard column for Kalandra dataSet.
+
+Things I learn about this project and to do more research and testing.
+    - The number of columns might not be even. So find a way to calulate the cut off point, probably not by date but by the id. 
+    - there is some outlier .... 
+    - Get one to show a chart first lor.
+
+Mistakes i made: 
+- I forget to plot the graph with mirror shard only 
+    - Double check whether data displayed is data you want. 
+- 
+
+Things to do:
+    - Changing all the dates to reference to number of days from leagueStart, 
+    so that we maybe able to stack on another dataSet.
+    - Changing the Graph to display percentage increase
+        - From the previous day
+        - With reference to the first day.
+
+Things i changed:
+- Changed the graph to contain only mirrorShard info
+- adding a new column 'days' depending on dates to be able to layer on another graph
+- reseting the index and then dropping the index column
+- trying out pct_change, which is a reference to a value to the previous row. 
+- cannot see the minor changed without clearing the dirty data, which is <65c
+- find another way to not include the drastic drop but yet retain the day with it.
+	- Maybe like for more than 20% increase replace the value with 0. 
+~ what we can also do is to have 2 different variable for different graph plotting. For the Interger value for mirror shard we remove the odd values out.
+~ whereas for the percentage change we replace the percentage change from negative to positive.
+! But cannot what, cause the next positive will jump dam high sia. (Then maybe we need to remove extreme cases of both high and low.)
+
+- Find the way formula for percentage change, depending on the changing of days.(manually for now) 
+- Apparantely if both axis from different variable have the same number of rows we can still plot the graph. 
+- mirrorshard for sentienl is not working cause the days has already been added in somewhere which i didnt remove. Now i have to see which place i had place for it 
+
+
+
+Can i get the new names out, Naming convention sucks
+
+
+
