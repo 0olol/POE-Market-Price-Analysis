@@ -47,16 +47,17 @@ Extracting the data.
     - Python 
     - Or using java. Plain Java ? Sounds boring but what i have to do. 
     - Being able to layer over multiple league worth of data over each other. 
-    - A time Stamp thing to take into account, how longb the period is for each dataset.
+    - A time Stamp thing to take into account, how long the period is for each dataset.
     - DL each league and extracting only Divine for now.(Divine only for 2 leagues though) 
     - Maybe do mirror card, cause i forget how much mageblood is.
-
-Extracting out the mirror shard column for Kalandra dataSet.
 
 Things I learn about this project and to do more research and testing.
     - The number of columns might not be even. So find a way to calulate the cut off point, probably not by date but by the id. 
     - there is some outlier .... 
     - Get one to show a chart first lor.
+    - Reggression analysis, finding a common dependent variable.
+        - In this case, looking at date with the common reference. 
+    
 
 Mistakes i made: 
 - I forget to plot the graph with mirror shard only 
@@ -64,31 +65,41 @@ Mistakes i made:
 - 
 
 Things to do:
+    - Extracting out the mirror shard column for Kalandra dataSet.(done)
     - Changing all the dates to reference to number of days from leagueStart, 
-    so that we maybe able to stack on another dataSet.
+    so that we maybe able to stack on another dataSet.(done)
     - Changing the Graph to display percentage increase
-        - From the previous day
+        - From the previous day(done)
         - With reference to the first day.
+    - Having the mean of the 4 dataset displayed out.
+        - Mostly for pct_change, to see the mean of the increase.  
 
 Things i changed:
 - Changed the graph to contain only mirrorShard info
 - adding a new column 'days' depending on dates to be able to layer on another graph
-- reseting the index and then dropping the index column
+- reseting the index and then dropping the index column (done)
+    ~ But i realised that this does not do anything for more insights.
+    ~ Its mostly used to showcase that I could use a new reference index, easier to count also.
 - trying out pct_change, which is a reference to a value to the previous row. 
 - cannot see the minor changed without clearing the dirty data, which is <65c
 - find another way to not include the drastic drop but yet retain the day with it.
 	- Maybe like for more than 20% increase replace the value with 0. 
-~ what we can also do is to have 2 different variable for different graph plotting. For the Interger value for mirror shard we remove the odd values out.
+~ what we can also do is to have 2 different variable for different graph plotting. For the Integer value for mirror shard we remove the odd values out.
 ~ whereas for the percentage change we replace the percentage change from negative to positive.
 ! But cannot what, cause the next positive will jump dam high sia. (Then maybe we need to remove extreme cases of both high and low.)
 
-- Find the way formula for percentage change, depending on the changing of days.(manually for now) 
+- Find the way formula for percentage change, depending on the changing of days.(manually for now) (done)
 - Apparantely if both axis from different variable have the same number of rows we can still plot the graph. 
-- mirrorshard for sentienl is not working cause the days has already been added in somewhere which i didnt remove. Now i have to see which place i had place for it 
-
-
-
-Can i get the new names out, Naming convention sucks
-
-
-
+- Mirrorshard for sentinel is not working cause the days has already been added in somewhere which i didnt remove. 
+  Now i have to see where did i add the days column.(done)
+    ~ probably from shallow copy of the previous variable. 
+- Added 4 dataSet layering over one another for both Integer and pct_change.
+- Learned and readup on Mean, Harmonic and Geometric Mean.
+    - Not applicable for this as not possible to do it with a 0 value dataPoint for pct_change
+    - Also this mean does not give me insights on my original goal. 
+- From the graph pct_change i only know
+    - That Day 6 will have a 20-30% increase 
+    - That Day 10 will have a 10-30% increase
+    - Need more research to take alook or support this data. 
+    - and to explain it. 
+    
