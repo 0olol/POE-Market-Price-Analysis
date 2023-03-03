@@ -57,6 +57,19 @@ Things I learn about this project and to do more research and testing.
     - Get one to show a chart first lor.
     - Reggression analysis, finding a common dependent variable.
         - In this case, looking at date with the common reference. 
+    - Pandas.DataFrame.Expanding
+        - Function inside a dataframe(similar to lambda)
+    - 
+
+Steps to Analyse the data:
+    - Come out a hypothesis
+    - Plotting the data to see whether your data is inline with your hypothesis
+        - Come out another hypothesis if your data doesnt support it
+    - Plotting the graph to find any outlier 
+        - With 2 valid variable
+    - Find the percentage change between each data points 
+    - Find the slope and the plateau, if any.
+    - Cut off the data point if need be, catogorising the data into certain time period.
     
 
 Mistakes i made: 
@@ -70,9 +83,10 @@ Things to do:
     so that we maybe able to stack on another dataSet.(done)
     - Changing the Graph to display percentage increase
         - From the previous day(done)
-        - With reference to the first day.
+        - With reference to the first day.(done)
     - Having the mean of the 4 dataset displayed out.
         - Mostly for pct_change, to see the mean of the increase.  
+    - 
 
 Things i changed:
 - Changed the graph to contain only mirrorShard info
@@ -102,4 +116,14 @@ Things i changed:
     - That Day 10 will have a 10-30% increase
     - Need more research to take alook or support this data. 
     - and to explain it. 
-    
+- Tried the percentage change with reference to the first day.
+    - The graph came out the same as the original graph with y = value and x = days 
+    - As the algorithm that i used is basically normalizing without reducing the value 
+
+Use the percentage graph to measure the stepness to stop the calculation for slope. 
+
+Then what compare how step the slope is ? 
+This is all past data, doesn't mean I can get insights from it. 
+No past data also got insights one
+
+
