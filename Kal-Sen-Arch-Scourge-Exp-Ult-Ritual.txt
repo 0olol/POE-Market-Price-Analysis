@@ -16,12 +16,18 @@ How updated is the information I want to make  ?
     - Not at all, means I plan on deciding which item i want to take out from it.
 Currency or divination card to be prioritized on. (Top few choices)
     - Divine Orb 
-    - Tailoring Orb 
-    - Tempering Orb 
-    - Secondary Regreding Lens 
+    - Tailoring Orb (done)
+    - Tempering Orb (done)
+    - Secondary Regreding Lens (done)
     - HeadHunter(HH) Cards
     - MageBlood(MB) Cards
-    - Mirror Shard, Mirror Cards
+    - Mirror Shard(done),Mirror(done)
+    - Mirror Cards
+        - 1 Mirror = 9 House of mirrors (value = 1/9 each, 0.111)
+        - 1 House of mirrors = 10 The Immortal (value = 1/90 each, 0.011)
+        - 1 Mirror = 20 Mirror shard (value = 1/20 each, 0.05)
+        - 1 Mirror shard = 13 Seven Years Bad Lucky (value = 1/260 each, 0.0038 )
+        - 19 Mirror Shard = 16 Unrequited Love (value = 19/320 each, 0.059)
 
 Useful Links for Api calls that need to be implemented if you want to automate it.: 
 https://www.reddit.com/r/pathofexiledev/comments/6vxowg/list_of_poeninja_api_links/
@@ -119,6 +125,10 @@ Things i changed:
 - Tried the percentage change with reference to the first day.
     - The graph came out the same as the original graph with y = value and x = days 
     - As the algorithm that i used is basically normalizing without reducing the value 
+- Ultimatium League is the worst case dataset for Mirror, Mirrorshard 
+    - As it is a corruption league, which means that you cannot mirror items and people would rather invest into good rares to corrupt
+    - Meaning that the increases was the worst. 
+    - Have to double check the other items, but(nvm i will do all the sheets first then i go find how to automate this)
 
 Use the percentage graph to measure the stepness to stop the calculation for slope. 
 
@@ -126,4 +136,4 @@ Then what compare how step the slope is ?
 This is all past data, doesn't mean I can get insights from it. 
 No past data also got insights one
 
-
+Double Check whether if everything that uses currency csv can work for the notebook anot.
