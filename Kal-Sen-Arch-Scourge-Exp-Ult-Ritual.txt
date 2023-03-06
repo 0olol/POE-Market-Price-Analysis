@@ -65,7 +65,7 @@ Steps to Analyse the data:
     - Come out a hypothesis
     - Plotting the data to see whether your data is inline with your hypothesis
         - Come out another hypothesis if your data doesnt support it
-    - Plotting the graph to find any outlier 
+    - Plotting the graph to find any outlier    
         - With 2 valid variable
     - Find the percentage change between each data points 
     - Find the slope and the plateau, if any.
