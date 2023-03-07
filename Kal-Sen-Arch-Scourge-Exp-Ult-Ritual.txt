@@ -20,13 +20,21 @@ Currency or divination card to be prioritized on. (Top few choices)
     - Tempering Orb (done)
     - Secondary Regreding Lens (done)
     - HeadHunter(HH) Cards
+        - 8 The Doctor(done)
+            - 8 The Nurse
+                - 8 The Patient
+        - 11 The Fiend(done)
+        - 10 The Demon(done)
     - MageBlood(MB) Cards
+        - 5 The Apothecary
+        - 9 The Insane Cat
+        - 7 The Price Of Devotion 
     - Mirror Shard(done),Mirror(done)
     - Mirror Cards
-        - 1 Mirror = 9 House of mirrors (value = 1/9 each, 0.111)
+        - 1 Mirror = 9 House of mirrors (value = 1/9 each, 0.111)(done)
         - 1 House of mirrors = 10 The Immortal (value = 1/90 each, 0.011)
         - 1 Mirror = 20 Mirror shard (value = 1/20 each, 0.05)
-        - 1 Mirror shard = 13 Seven Years Bad Lucky (value = 1/260 each, 0.0038 )
+        - 1 Mirror shard = 13 Seven Years Bad Luck (value = 1/260 each, 0.0038 )
         - 19 Mirror Shard = 16 Unrequited Love (value = 19/320 each, 0.059)
 
 Useful Links for Api calls that need to be implemented if you want to automate it.: 
@@ -136,4 +144,5 @@ Then what compare how step the slope is ?
 This is all past data, doesn't mean I can get insights from it. 
 No past data also got insights one
 
-Double Check whether if everything that uses currency csv can work for the notebook anot.
+
+Need to look through the divination card results, to look through which league dataSet of the each type of divination card to exclude.
