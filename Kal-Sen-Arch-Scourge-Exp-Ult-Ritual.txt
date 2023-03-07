@@ -18,7 +18,7 @@ Currency or divination card to be prioritized on. (Top few choices)
     - Divine Orb 
     - Tailoring Orb (done)
     - Tempering Orb (done)
-    - Secondary Regreding Lens (done)
+    - Secondary Regrading Lens (done)
     - HeadHunter(HH) Cards
         - 8 The Doctor(done)
             - 8 The Nurse
@@ -146,3 +146,17 @@ No past data also got insights one
 
 
 Need to look through the divination card results, to look through which league dataSet of the each type of divination card to exclude.
+Other than Mirror and Mirror Shard having extra dataSet contain inside compared to the other feel.
+HHCard - out
+MageBlood - out, Only one card because of release date, and the other one only has 2 leagues worth of data, not worth it.
+Mirror - Prob Need to remove the first Value from the Ultimatium League
+Mirror Shard - Prob need to remove the drop Kalandra League
+Mirror Card:
+House Of Mirror - Seem okay, but just to be sure probably need to remove Archnemesis first day value, and also take a look at expedition dataset
+The Immortal - Need to take a look at the Archnemesis DataSet to see whether need remove the entire thing or just the first point.
+Unrequited Love - Looks okay
+Seven Years Bad Luck - Looks okay
+Secondary Regrading Lens - Too random for data 
+Tempering Orb - Removing the Archnemesis data too outlieror remove the first data
+Tailoring Orb - Removing the Archnemesis data too outlier or remove the first data
+
