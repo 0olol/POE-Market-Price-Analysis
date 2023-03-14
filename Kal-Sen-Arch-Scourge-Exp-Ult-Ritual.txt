@@ -61,7 +61,7 @@ Extracting the data.
     - Python 
     - Or using java. Plain Java ? Sounds boring but what i have to do. 
     - Being able to layer over multiple league worth of data over each other. 
-    - A time Stamp thing to take into account, how long the period is for each dataset.
+    - A time Stamp thing to take into account, how long the period is for each dataSet.
     - DL each league and extracting only Divine for now.(Divine only for 2 leagues though) 
     - Maybe do mirror card, cause i forget how much mageblood is.
 
@@ -98,7 +98,7 @@ Things to do:
     - Changing the Graph to display percentage increase
         - From the previous day(done)
         - With reference to the first day.(done)
-    - Having the mean of the 4 dataset displayed out.
+    - Having the mean of the 4 dataSet displayed out.
         - Mostly for pct_change, to see the mean of the increase.  
     - 
 
@@ -133,30 +133,33 @@ Things i changed:
 - Tried the percentage change with reference to the first day.
     - The graph came out the same as the original graph with y = value and x = days 
     - As the algorithm that i used is basically normalizing without reducing the value 
-- Ultimatium League is the worst case dataset for Mirror, Mirrorshard 
+- Ultimatium League is the worst case dataSet for Mirror, Mirrorshard 
     - As it is a corruption league, which means that you cannot mirror items and people would rather invest into good rares to corrupt
     - Meaning that the increases was the worst. 
     - Have to double check the other items, but(nvm i will do all the sheets first then i go find how to automate this)
-
+- From the data, it shows that when Archnemesis Tailoring and Tempering Orb is lower than 30c, you will have a huge profit margin. So when it is lower than 30c just buy on league start
 Use the percentage graph to measure the stepness to stop the calculation for slope. 
+- Had a part where i drop the first few value, but this means im missing it, overall dropping the dataset after testing would be the best effect.
+
 
 Then what compare how step the slope is ? 
 This is all past data, doesn't mean I can get insights from it. 
 No past data also got insights one
+Need to try combining all the percentage into one line, leaving a few league dataSet out. 
+Thinking of placing all into one chunck for better reference
 
-
+(Done)
 Need to look through the divination card results, to look through which league dataSet of the each type of divination card to exclude.
 Other than Mirror and Mirror Shard having extra dataSet contain inside compared to the other feel.
 HHCard - out
 MageBlood - out, Only one card because of release date, and the other one only has 2 leagues worth of data, not worth it.
-Mirror - Prob Need to remove the first Value from the Ultimatium League
+Mirror - Done remove Kalandra league
 Mirror Shard - Prob need to remove the drop Kalandra League
-Mirror Card:
-House Of Mirror - Seem okay, but just to be sure probably need to remove Archnemesis first day value, and also take a look at expedition dataset
-The Immortal - Need to take a look at the Archnemesis DataSet to see whether need remove the entire thing or just the first point.
+Mirror Card: - Done
+House Of Mirror - Seem okay, but just to be sure probably need to remove Archnemesis first day value, and also take a look at expedition dataSet
+The Immortal - Need to take a look at the Archnemesis dataSet to see whether need remove the entire thing or just the first point.
 Unrequited Love - Looks okay
 Seven Years Bad Luck - Looks okay
 Secondary Regrading Lens - Too random for data 
-Tempering Orb - Removing the Archnemesis data too outlieror remove the first data
-Tailoring Orb - Removing the Archnemesis data too outlier or remove the first data
+Tempering Orb/Tailoring Orb - Done
 
