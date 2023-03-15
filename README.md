@@ -2,7 +2,6 @@
 
 
 ## Project Description
----
 Analysing the Path of Exile martket, as a player, you want to make sure that you get the most value for your investment. In this analysis, we will use data from past leagues to determine which currency or divination card to purchase to have the best return of interest. However, we will exclude data from the current league, as the prices of items can vary greatly between leagues.
  
 *This Analysis has been done in **Sanctum League***
@@ -23,10 +22,10 @@ As a result, I had to carefully consider the leagues which I have to exculde fro
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
+     <!-- <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-      </ul>
+      </ul> -->
     </li>
     <li><a href="#executing-the-program">Executing the program</a></li>
     <li><a href="#analysis-on-the-following-item">Analysis on the following item</a></li>
@@ -39,7 +38,6 @@ As a result, I had to carefully consider the leagues which I have to exculde fro
 
 ---
 ## Getting Started
----
 Firstly I have removed the CSV file that contains the items section to be uploaded. 
 Because it is too big and i would have to pay for me to upload. For those that want to run this notebook please go ahead follow the steps and download the files
 
@@ -62,7 +60,6 @@ Because it is too big and i would have to pay for me to upload. For those that w
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## Executing the program
----
 - Run the Important_Item.ipynb after selecting the kernel that you wished to use.
 - This analysis contains only a few items, you are welcome to add in more stuff.
 - Change the following **league** and **item** to your choice.
@@ -76,7 +73,7 @@ kalandra = kalandra_items.loc[kalandra_items['Name']=='House of Mirrors']
 
 
 ## Analysis on the following item
----
+
 ![Product Name Screen Shot](8_Items_Analysis_POE.png)
 
 Currency or Divination card that have been done.
@@ -113,7 +110,7 @@ The same reason goes for Divine Orb, which is change for 2 leagues.
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## In-depth Analysis
----
+
 FAQ on why I take certain steps, and my initial train of thoughts and mistakes. ->
 [Here](Kal-Sen-Arch-Scourge-Exp-Ult-Ritual.txt)
 
@@ -122,6 +119,6 @@ An Indepth analysis ->
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## Credits
----
+
 Thanks to poe.antiquary for the idea and poe.ninja for providing the data dumps
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
