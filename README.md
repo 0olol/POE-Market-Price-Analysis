@@ -2,13 +2,13 @@
 
 
 ## Project Description
-Analysing the Path of Exile martket, as a player, you want to make sure that you get the most value for your investment. In this analysis, we will use data from past leagues to determine which currency or divination card to purchase to have the best return of interest. However, we will exclude data from the current league, as the prices of items can vary greatly between leagues.
+Analyzing the Path of Exile market, as a player, you want to make sure that you get the most value for your investment. In this analysis, we will use data from past leagues to determine which currency or divination card to purchase to have the best return of interest. However, we will exclude data from the current league, as the prices of items can vary greatly between leagues.
  
 *This Analysis has been done in **Sanctum League***
 
 To conduct this analysis, I utilized Python, along with the popular data analysis libraries, Pandas and Numpy. I also plotted the data using the Matplotlib library. One of the main challenges I faced during this analysis was ensuring the accuracy of the data, where data might be skewed to the sudden buff or nerf of a certain item.
 
-As a result, I had to carefully consider the leagues which I have to exculde from the collected data, and also ensure that I was not including data from the current league, as this could skew the results. Overall, with the help of Python and the data analysis libraries, I was able to conduct a thorough analysis of past league data in Path of Exile, providing players with valuable insights on how to maximize their return on investment.
+As a result, I had to carefully consider the leagues which I have to exclude from the collected data, and also ensure that I was not including data from the current league, as this could skew the results. Overall, with the help of Python and the data analysis libraries, I was able to conduct a thorough analysis of past league data in Path of Exile, providing players with valuable insights on how to maximize their return on investment.
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 <details>
@@ -39,7 +39,7 @@ As a result, I had to carefully consider the leagues which I have to exculde fro
 ---
 ## Getting Started
 Firstly I have removed the CSV file that contains the items section to be uploaded. 
-Because it is too big and i would have to pay for me to upload. For those that want to run this notebook please go ahead follow the steps and download the files
+Because it is too big and I would have to pay to upload it. For those that want to run this notebook please go ahead follow the steps and download the files
 
 - Create a folder name **Items** in the same directory as the original notebook.
 
@@ -60,7 +60,7 @@ Because it is too big and i would have to pay for me to upload. For those that w
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## Executing the program
-- Run the Important_Item.ipynb after selecting the kernel that you wished to use.
+- Run the Important_Item.ipynb after selecting the kernel that you wish to use.
 - This analysis contains only a few items, you are welcome to add in more stuff.
 - Change the following **league** and **item** to your choice.
 
@@ -98,15 +98,15 @@ Currency or Divination card that have been done.
         - The Fiend*
         - The Demon*
 
-The ones with * has not been analyse or presented as important item.
+The ones with * has not been analyzed or presented as an important item.
 
-For HH after the rework it only has 2 leagues worth of data, and in Kalandra League because of the Loot Globin, everyone is equipping Quantity Gear and to get higher Damage Per Second(DPS) and survivability they are using HH.
+For HH after the rework it only has 2 leagues worth of data, and in Kalandra League because of the Loot Goblin, everyone is equipping Quantity Gear and to get higher Damage Per Second(DPS) and survivability they are using HH.
 
-For the 2 Mageblood Card, it is only released in Sanctum League which at the point of analysing, I do not have the data set included.
+For the 2 Mageblood Cards, it is only released in Sanctum League which at the point of analysis, I do not have the data set included.
 
 But I would not advise to invest in The Apothecary card as two leagues worth of data is not sufficient to come up with decent information. 
 
-The same reason goes for Divine Orb, which is change for 2 leagues.
+The same reason goes for Divine Orb, which is changed for 2 leagues.
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## In-depth Analysis
@@ -114,8 +114,8 @@ The same reason goes for Divine Orb, which is change for 2 leagues.
 FAQ on why I take certain steps, and my initial train of thoughts and mistakes. ->
 [Here](Kal-Sen-Arch-Scourge-Exp-Ult-Ritual.txt)
 
-An Indepth analysis ->
-[Here]()
+An In-depth analysis ->
+[Here](In-depth.md)
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## Credits
