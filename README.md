@@ -38,8 +38,7 @@ As a result, I had to carefully consider the leagues which I have to exclude fro
 
 ---
 ## Getting Started
-Firstly I have removed the CSV file that contains the items section to be uploaded. 
-Because it is too big and I would have to pay to upload it. For those that want to run this notebook please go ahead follow the steps and download the files
+To begin with, I have removed the CSV file containing the item section that was meant to be uploaded. The file was too large, and I would have had to pay to upload it. If you wish to run this notebook, please follow the steps and download the required files.
 
 - Create a folder name **Items** in the same directory as the original notebook.
 
@@ -60,14 +59,14 @@ Because it is too big and I would have to pay to upload it. For those that want 
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## Executing the program
-- Run the Important_Item.ipynb after selecting the kernel that you wish to use.
-- This analysis contains only a few items, you are welcome to add in more stuff.
-- Change the following **league** and **item** to your choice.
+- Select the desired kernel and run the "Important_Item.ipynb".
+- This analysis only includes a limited number of items, but feel free to add more.
+- Modify the **league** and **item** to your preferred selection.
 
 ```python
 kalandra = kalandra_items.loc[kalandra_items['Name']=='House of Mirrors']
 ```
-- Inside Individual Files, contains the files for some of the individual currency analysis and results
+- Inside "Individual Files" folder, contains the files for some of the individual currency analysis and results.
 
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
@@ -98,15 +97,16 @@ Currency or Divination card that have been done.
         - The Fiend*
         - The Demon*
 
-The ones with * has not been analyzed or presented as an important item.
 
-For HH after the rework it only has 2 leagues worth of data, and in Kalandra League because of the Loot Goblin, everyone is equipping Quantity Gear and to get higher Damage Per Second(DPS) and survivability they are using HH.
+The items marked with an asterisk (*) have not been analyzed or presented as important items.
 
-For the 2 Mageblood Cards, it is only released in Sanctum League which at the point of analysis, I do not have the data set included.
+The Headhunter (HH) has only two leagues' worth of data after its rework, and in the Kalandra League, everyone is equipping Quantity Gear and using HH to get higher Damage Per Second (DPS) and survivability.
 
-But I would not advise to invest in The Apothecary card as two leagues worth of data is not sufficient to come up with decent information. 
+The two Mageblood Cards are only available in the Sanctum League, and at the time of analysis, the dataset for that league was not included.
 
-The same reason goes for Divine Orb, which is changed for 2 leagues.
+However, I would not recommend investing in The Apothecary card as there are only two leagues' worth of data, which is not sufficient to draw reliable conclusions.
+
+The same goes for the Divine Orb, which has changed for two leagues.
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
 
 ## In-depth Analysis
@@ -120,5 +120,8 @@ An In-depth analysis ->
 
 ## Credits
 
-Thanks to poe.antiquary for the idea and poe.ninja for providing the data dumps
+* [POE Antiquary](https://poe-antiquary.xyz/) for the idea.
+
+* [POE Ninja](https://poe.ninja/) for providing the data dumps.
+
 <p align="right">(<a href="#poe-market-price-analysis">back to top</a>)</p>
